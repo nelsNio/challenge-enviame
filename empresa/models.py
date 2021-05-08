@@ -1,7 +1,9 @@
 from django.db import models
 
 # Create your models here.
-
+"""
+Modelo de la entidad Empresa
+"""
 class Empresa(models.Model):
     name=models.CharField(max_length=100)
     address=models.CharField(max_length=100)
