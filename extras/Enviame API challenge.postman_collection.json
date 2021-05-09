@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "f7553949-f99b-4707-b390-f8008df16c05",
+		"name": "Enviame API challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear una lista de  empresas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/v1/empresas/fill_data/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"empresas",
+						"fill_data",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista empresas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/v1/empresas/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"empresas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fibonacci",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/v1/fibonacci/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"fibonacci",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejercicio 3: Análisis + Desarrollo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/v1/find_words/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"find_words",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deliveries:Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/v1/deliveries/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deliveries: Crear; Ejercicio 4: Consumo API Envíame para la creación de un envío",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\": {\n        \"identifier\": 1563829,\n        \"imported_id\": \"255826267\",\n        \"tracking_number\": \"11566\",\n        \"status\": {\n            \"id\": 5,\n            \"name\": \"Listo para despacho\",\n            \"code\": \"CREATED\",\n            \"info\": \"Ya creamos tu envío en: BLUEXPRESS  - \",\n            \"created_at\": \"2021-05-08 17:16:03\"\n        },\n        \"customer\": {\n            \"full_name\": \"Bernardita Tapia Riquelme\",\n            \"phone\": \"977623070\",\n            \"email\": \"b.tapia@outlook.com\"\n        },\n        \"shipping_address\": {\n            \"full_address\": \"SAN HUGO 01324, Puente Alto, Puente Alto\",\n            \"place\": \"Puente Alto\",\n            \"type\": \"home\"\n        },\n        \"country\": \"CL\",\n        \"carrier\": \"BLUEXPRESS\",\n        \"service\": \"priority\",\n        \"label\": {\n            \"PDF\": \"https://storage.googleapis.com/dev-carrier-deliveries/202105/1563829/11566-label.pdf\",\n            \"ZPL\": null,\n            \"PNG\": null\n        },\n        \"barcodes\": null,\n        \"deadline_at\": \"No informada.\",\n        \"created_at\": \"2021-05-08 17:15:59\",\n        \"updated_at\": \"2021-05-08 17:16:03\",\n        \"links\": [\n            {\n                \"rel\": \"self\",\n                \"href\": \"https://stage.api.enviame.io/api/s2/v2/deliveries/1563829\"\n            },\n            {\n                \"rel\": \"tracking\",\n                \"href\": \"https://stage.api.enviame.io/api/s2/v2/deliveries/1563829/tracking\"\n            },\n            {\n                \"rel\": \"tracking-web\",\n                \"href\": \"https://stage.api.enviame.io/s2/companies/401/deliveries/1563829/tracking\"\n            }\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/v1/deliveries/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deliveries: Calcular dias de entega",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"data\": {\n        \"identifier\": 1563829,\n        \"imported_id\": \"255826267\",\n        \"tracking_number\": \"11566\",\n        \"status\": {\n            \"id\": 5,\n            \"name\": \"Listo para despacho\",\n            \"code\": \"CREATED\",\n            \"info\": \"Ya creamos tu envío en: BLUEXPRESS  - \",\n            \"created_at\": \"2021-05-08 17:16:03\"\n        },\n        \"customer\": {\n            \"full_name\": \"Bernardita Tapia Riquelme\",\n            \"phone\": \"977623070\",\n            \"email\": \"b.tapia@outlook.com\"\n        },\n        \"shipping_address\": {\n            \"full_address\": \"SAN HUGO 01324, Puente Alto, Puente Alto\",\n            \"place\": \"Puente Alto\",\n            \"type\": \"home\"\n        },\n        \"country\": \"CL\",\n        \"carrier\": \"BLUEXPRESS\",\n        \"service\": \"priority\",\n        \"label\": {\n            \"PDF\": \"https://storage.googleapis.com/dev-carrier-deliveries/202105/1563829/11566-label.pdf\",\n            \"ZPL\": null,\n            \"PNG\": null\n        },\n        \"barcodes\": null,\n        \"deadline_at\": \"No informada.\",\n        \"created_at\": \"2021-05-08 17:15:59\",\n        \"updated_at\": \"2021-05-08 17:16:03\",\n        \"links\": [\n            {\n                \"rel\": \"self\",\n                \"href\": \"https://stage.api.enviame.io/api/s2/v2/deliveries/1563829\"\n            },\n            {\n                \"rel\": \"tracking\",\n                \"href\": \"https://stage.api.enviame.io/api/s2/v2/deliveries/1563829/tracking\"\n            },\n            {\n                \"rel\": \"tracking-web\",\n                \"href\": \"https://stage.api.enviame.io/s2/companies/401/deliveries/1563829/tracking\"\n            }\n        ]\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/api/v1/deliveries/estimate_delivery_time/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						"estimate_delivery_time",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
