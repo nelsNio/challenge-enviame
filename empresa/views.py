@@ -9,10 +9,10 @@ from faker import Faker
 
 """
 Vista encargada de CRUD basica para la entidad empresa
-POST:       http://0.0.0.0:8000/api/v1/fibonacci/  JSON
-GET:        http://0.0.0.0:8000/api/v1/fibonacci/ 
-PATCH:      http://0.0.0.0:8000/api/v1/fibonacci/{id}/ JSON
-DELETE:     http://0.0.0.0:8000/api/v1/fibonacci/{id}/
+POST:       http://0.0.0.0:8000/api/v1/empresas/  JSON
+GET:        http://0.0.0.0:8000/api/v1/empresas/ 
+PATCH:      http://0.0.0.0:8000/api/v1/empresas/{id}/ JSON
+DELETE:     http://0.0.0.0:8000/api/v1/empresas/{id}/
 
 """
 class EmpresaViewset(viewsets.ModelViewSet):
