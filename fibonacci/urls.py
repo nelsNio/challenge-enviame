@@ -6,4 +6,5 @@ router = DefaultRouter()
 
 urlpatterns = [
     path('fibonacci/',views.fibonacci),
+    path('find_words/',views.find_words),
 ] + router.urls
