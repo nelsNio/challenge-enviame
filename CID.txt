@@ -1,0 +1,15 @@
+CODIGO,NOMBRE,ESTADO;
+codigo_q,nombre33,true;
+codigo_r,nombre_test_ups,false;
+codigo_s,nombre33,true;
+codigo_0,nombre33,true;
+codigo_1,nombre33,false;
+codigo_2,nombre_33,true;
+codigo3,nombre53,true;
+codigo4,nom_bre73,false;
+codigo5,nombre73,true;
+codigo6,nombre173,true;
+codigo7,nombre3,true;
+codigo8,nombre43,true;
+codigo90,nombre43,true;
+codigo80,nombre43,true;
